@@ -1,0 +1,94 @@
+@import url("var.css");
+/* a mettre dans var.css quand fini le css */
+:root {
+  /*  COLOR  */
+  --hexa-body-background-color: #222222;
+  --rgba-section-background-color: rgba(217, 217, 217, .21);
+  --hexa-main-color: #E25113;
+}
+
+::-moz-selection {
+  background: var(--hexa-main-color);
+  color: black;
+}
+
+::selection {
+  background: var(--hexa-main-color);
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  background-color: var(--hexa-body-background-color);
+  overflow: hidden;
+  color: white;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: var(--rgba-section-background-color);
+}
+body header .logo {
+  height: 100px;
+  position: absolute;
+  margin-right: auto;
+}
+body .top {
+  height: 50vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+body .top .light {
+  height: 100%;
+  width: 15%;
+  background-color: var(--rgba-section-background-color);
+}
+body .top .configuration {
+  height: 100%;
+  width: 50%;
+  background-color: var(--rgba-section-background-color);
+}
+body .top .scene {
+  height: 100%;
+  width: 15%;
+  background-color: var(--rgba-section-background-color);
+}
+body .top header {
+  background: none;
+}
+body .bottom {
+  height: 20vh;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+body .bottom .setting {
+  height: 100%;
+  width: 40%;
+  background-color: var(--rgba-section-background-color);
+}
+body .bottom .stats {
+  height: 100%;
+  width: 50%;
+  background-color: var(--rgba-section-background-color);
+}
+body .bottom header {
+  background: none;
+}/*# sourceMappingURL=style.css.map */
