@@ -17,6 +17,27 @@
   color: black;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+/* Handle */
+.mouseOn main::-webkit-scrollbar-thumb {
+  background: #E25113;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: none;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,17 +77,50 @@ body .top {
 body .top .light {
   height: 100%;
   width: 15%;
-  background-color: var(--rgba-section-background-color);
 }
 body .top .configuration {
   height: 100%;
   width: 50%;
-  background-color: var(--rgba-section-background-color);
 }
 body .top .scene {
   height: 100%;
   width: 15%;
-  background-color: var(--rgba-section-background-color);
+}
+body .top .scene main {
+  height: calc(100% - 130px);
+  background: none;
+}
+body .top .scene footer {
+  background-color: none;
+  height: 80px;
+  width: calc(100% - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .top .scene footer .addButton {
+  background: rgba(217, 217, 217, 0.5);
+  width: 80%;
+  min-height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+body .top .scene footer .addButton .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .top .scene footer .addButton .content i {
+  font-size: 21px;
+}
+body .top .scene footer .addButton:hover {
+  cursor: pointer;
+  background: rgba(217, 217, 217, 0.3);
 }
 body .top header {
   background: none;
@@ -82,13 +136,77 @@ body .bottom {
 body .bottom .setting {
   height: 100%;
   width: 40%;
-  background-color: var(--rgba-section-background-color);
 }
 body .bottom .stats {
   height: 100%;
   width: 50%;
-  background-color: var(--rgba-section-background-color);
 }
 body .bottom header {
   background: none;
+}
+body section .group {
+  background-color: var(--rgba-section-background-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section .group header {
+  background: none;
+  height: 40px;
+  font-size: 25px;
+  font-weight: 600;
+}
+body section .group main {
+  background: none;
+  height: calc(100% - 80px);
+  width: calc(100% - 80px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  overflow: auto;
+}
+
+.lightButton {
+  background: rgba(217, 217, 217, 0.5);
+  width: 80%;
+  min-height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.lightButton:hover {
+  cursor: pointer;
+  background: rgba(217, 217, 217, 0.3);
+}
+
+.sceneButton {
+  background: rgba(217, 217, 217, 0.5);
+  width: 80%;
+  min-height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.sceneButton:hover {
+  cursor: pointer;
+  background: rgba(217, 217, 217, 0.3);
+}
+
+.buttonOn {
+  background: #e25113;
+  color: white;
+}
+.buttonOn:hover {
+  background: rgba(226, 81, 19, 0.8);
 }/*# sourceMappingURL=style.css.map */
