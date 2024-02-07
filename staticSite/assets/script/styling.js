@@ -2,6 +2,12 @@ const lightButtons = document.getElementsByClassName("lightButton");
 const sceneButton = document.getElementsByClassName("sceneButton");
 const sceneButtons = document.querySelectorAll(".sceneButton");
 const sectionScrollBar = document.getElementsByClassName("group");
+const modeButton = document.getElementById("mode");
+const modeSpan = document.getElementById("CurrMode");
+
+const sunImage = "<i class='bx bxs-sun'></i>";
+const moonImage = "<i class='bx bxs-moon' ></i>";
+var mode = 1;
 
 
 function updateButtonStyle(){
@@ -31,5 +37,26 @@ function updateScrollBarStyle(){
     }
 }
 
+
+function updatePageMode()
+{
+    if(mode)
+    {
+        modeSpan.innerHTML = moonImage;
+    }
+    else
+    {
+        modeSpan.innerHTML = sunImage;
+    }
+}
+
+modeButton.addEventListener("click", ()=>{
+    document.body.classList.toggle("dark");
+    mode = (mode) ? 0: 1;
+    console.log(mode);
+    updatePageMode();
+});
+
 updateButtonStyle();
 updateScrollBarStyle();
+updatePageMode();

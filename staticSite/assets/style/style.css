@@ -209,4 +209,24 @@ body section .group main {
 }
 .buttonOn:hover {
   background: rgba(226, 81, 19, 0.8);
+}
+
+.sett-button {
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+.sett-button .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 18px;
+}
+.sett-button:hover {
+  cursor: pointer;
+  background: rgba(217, 217, 217, 0.3);
 }/*# sourceMappingURL=style.css.map */
